@@ -1,0 +1,15 @@
+<% if @post.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= pluralize(@post.errors.count, "error") %> No se ha podido enviar el post:</h2>
+
+        <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+        </ul>
+    </div>
+<% else %>
+    <h1> Post creado con éxito</h1>
+<% end %>
+
+

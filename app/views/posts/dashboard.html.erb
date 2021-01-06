@@ -1,0 +1,23 @@
+<h1>Crear Artículo</h1>
+
+<form id="create_posts" method="get" action="<%= posts_create_path%>">
+
+    <div class="mb-3">
+        <label for="form_title" class="form-label">Título</label>
+        <input name="title" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="form_image_url" class="form-label">Imagen</label>
+        <input name="image_url" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="form_content" class="form-label">Contenido</label>
+        <input name="content" class="form-control" type="textarea">
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Enviar">
+
+</form>
+
